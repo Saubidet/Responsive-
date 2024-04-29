@@ -241,7 +241,7 @@ footer {
     
 }
 
-@media screen and (min-width: 1075px) {
+@media screen and (min-width: 1450px) {
     #home {
         background: url('./imagenes/Pc1.jpg') no-repeat;
     }
