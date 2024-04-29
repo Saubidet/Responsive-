@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: black;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+#logo {
+    background: url('./imgenes/logo.png');
+    width: 107px;
+    height: 56px;
+    background-size: cover;
+    text-indent: -1000px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+#logo a {
+    display: block;
+    height: 60px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100px;
+    text-align: center;
+}
+
+nav a:hover {
+    color: #bce233;
+}
+
+#home {
+    background: url('./imgenes/cel3.jpg') no-repeat;
+    background-size: cover;
+    height: 50vh;
+    padding: 2em;
+    text-align: center;
+}
+
+#services {
+    text-align: center;
+    padding: 2em;
+}
+
+#services h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    background: #000000;
+    color: white;
+    padding: 3rem;
+}
+
+#services div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1em 0;
+}
+
+#services article {
+    border: 2px solid #141413;
+    padding: 1em;
+    font-size: 1rem;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 2px #141413;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#services article h3 {
+    margin: 1em 0;
+}
+
+#about {
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    background: #000000;
+    color: white;
+    padding: 3rem;
+}
+
+#about figcaption {
+    text-align: justify;
+    font-size: 1.5rem;
+    line-height: 2;
+    padding: 2.5rem;
+    border: 2px solid #141413;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 2px #141413;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#about figcaption p {
+    margin: 1rem;
+}
+
+#about figcaption img {
+    border-radius: 20px;
+    text-align: center;
+}
+
+#somos {
+    text-align: center;
+    padding: 2em;
+    font-size: 1.5rem;
+}
+
+#somos h2 {
+    margin: 1em;
+}
+
+#somos figure {
+    padding: 1em;
+    display: inline-block;
+    text-align: center;
+}
+
+#somos figure img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#somos figure h3 {
+    font-style: italic;
+    font-size: 1em;
+}
+
+#somos figcaption {
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0.5em;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+    font-size: 1.3rem;
+}
+
+@media screen and (min-width: 800px) {
+    header {
+        flex-direction: row;
+    }
+    #home {
+        background: url('./imgenes/tablet3.jpg') no-repeat;
+    }
+    #services h2,
+    #somos h2 {
+        flex-direction: row;
+    }
+    #services div {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #about figcaption img {
+        max-width: 80%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #home {
+        background: url('./imgenes/Pc1.jpg') no-repeat;
+    }
+    #services div {
+        justify-content: center;
+    }
+}
