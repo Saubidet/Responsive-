@@ -86,6 +86,19 @@ nav a:hover {
     margin: 1em 0;
 }
 
+#services figure img.diseño{
+    display: none;
+}
+#services figure img.marketing{
+    display: none;
+}
+#services figure img.programacion{
+    display: none;
+}
+#services figure img.fotografia{
+    display: none;
+}
+
 #about {
     text-align: center;
     max-width: 100%;
@@ -188,6 +201,30 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
     }
+    #services figure img.diseñomobile{
+        display: none;
+    }
+    #services figure img.diseño{
+        display: block;
+    }
+    #services figure img.marketingmobile{
+        display: none;
+    }
+    #services figure img.marketing{
+        display: block;
+    }
+    #services figure img.programacionmobile{
+        display: none;
+    }
+    #services figure img.programacion{
+        display: block;
+    }
+    #services figure img.fotografiamobile{
+        display: none;
+    }
+    #services figure img.fotografia{
+        display: block;
+    }
     #about figcaption img {
         border-radius: 20px;
         text-align: center;
@@ -201,6 +238,7 @@ footer {
     #about figcaption img.tablet{
         display: block;
     }
+    
 }
 
 @media screen and (min-width: 1000px) {
